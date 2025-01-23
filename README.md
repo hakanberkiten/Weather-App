@@ -39,7 +39,7 @@ npm install
 Create a `.env` file in the root directory to store your **API key** securely.
 
 ```env
-REACT_APP_API_KEY=your_openweather_api_key
+REACT_APP_API_KEY = your_openweather_api_key
 ```
 
 - Replace `your_openweather_api_key` with your OpenWeather API key.
