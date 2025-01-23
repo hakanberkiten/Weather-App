@@ -123,11 +123,11 @@ To build and deploy the application:
 
 ### Light Theme
 
-![Light Theme Screenshot](screenshot_light.png)
+![Light Theme Screenshot](light-mode.png)
 
 ### Dark Theme
 
-![Dark Theme Screenshot](screenshot_dark.png)
+![Dark Theme Screenshot](dark-mode.png)
 
 ---
 
