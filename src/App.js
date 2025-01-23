@@ -21,7 +21,6 @@ const WeatherApp = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const API_KEY = process.env.REACT_APP_API_KEY;
 
-  // Tema değiştirme fonksiyonu
   const toggleTheme = () => {
     const newTheme = !isDarkMode;
     setIsDarkMode(newTheme);
@@ -29,14 +28,12 @@ const WeatherApp = () => {
     localStorage.setItem('theme', newTheme ? 'dark' : 'light');
   };
 
-  // LocalStorage'dan tema yükleme
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') || 'light';
     setIsDarkMode(savedTheme === 'dark');
     document.documentElement.setAttribute('data-theme', savedTheme);
   }, []);
 
-  // Hava durumu konfigürasyonu
   const weatherConfig = {
     Clear: { icon: <FiSun />, label: 'Sunny' },
     Clouds: { icon: <FiCloud />, label: 'Cloudy' },
@@ -45,7 +42,6 @@ const WeatherApp = () => {
     Thunderstorm: { icon: <FiCloudLightning />, label: 'Stormy' },
   };
 
-  // Hava durumu verilerini çekme
   const fetchWeatherData = async () => {
     try {
       const response = await axios.get(
@@ -60,7 +56,6 @@ const WeatherApp = () => {
     }
   };
 
-  // Veri işleme fonksiyonu
   const processForecastData = (list) => {
     const today = new Date().toISOString().split('T')[0];
     const groupedData = {};
@@ -93,7 +88,6 @@ const WeatherApp = () => {
     return Object.values(groupedData);
   };
 
-  // Tarih formatlama
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     return {
@@ -104,12 +98,12 @@ const WeatherApp = () => {
 
   return (
     <div className="container">
-      {/* Tema değiştirme butonu */}
+      {}
       <button className="theme-toggle" onClick={toggleTheme}>
         {isDarkMode ? <FiSun /> : <FiMoon />}
       </button>
 
-      {/* Arama çubuğu */}
+      {}
       <div className="search-box">
         <input
           type="text"
@@ -121,7 +115,7 @@ const WeatherApp = () => {
         <button onClick={fetchWeatherData}>Search</button>
       </div>
 
-      {/* Hava durumu kartı */}
+      {}
       {weatherData && (
         <div className="weather-card-container">
           <button
