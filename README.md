@@ -3,6 +3,8 @@
 
 This project is a weather forecast application built with **React**. It provides weather information for any city using the [OpenWeather API](https://openweathermap.org/api). The app supports light and dark themes and displays current weather along with daily forecasts.
 
+You can visit
+
 ---
 
 ## Features
@@ -66,6 +68,14 @@ The application will be available at `http://localhost:3000`.
    - Use the left and right arrows to navigate through daily forecasts.
 
 ---
+
+## Live Demo
+
+You can visit my application by clicking the link below:
+
+👉 [Weather App - Live Demo](https://weather-app-beta-eight-96.vercel.app/)
+
+
 
 ## API Integration
 
