@@ -3,7 +3,7 @@
 
 This project is a weather forecast application built with **React**. It provides weather information for any city using the [OpenWeather API](https://openweathermap.org/api). The app supports light and dark themes and displays current weather along with daily forecasts.
 
-You can visit
+
 
 ---
 
